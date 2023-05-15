@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+}
+
+.title h1 {
+    color: red;
+}
+
+.title h4 {
+    color: blue;
+}
+
+#score {
+    color: red;
+}
+
+.canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rules-div {
+    width: 750px;
+}
+
+.rules {
+    text-align: left;
+    font-size: 24px;
+    line-height: 2;
+}

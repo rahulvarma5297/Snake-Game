@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1>Snake Game</h1>
+      <h4>By Rahul Varma</h4>
+      <h1 id="score">Score: <span id="scoreCount">0</span></h1>
+    </div>
+    <div class="canvas">
+      <canvas id="canvas"></canvas>
+      <div class="rules-div">
+        <ul class="rules">
+          <li>
+            For movement of the snake you can use the arrow keys and also the
+            WASD keys.
+          </li>
+          <li>
+            When the player eats the food the size of snake will grow of one
+            block.
+          </li>
+          <li>
+            When the snake hit the walls then he will die and the alert pops up.
+          </li>
+          <li>
+            When the snake eats himself then also he will die and the alert pops
+            up.
+          </li>
+          <li>
+            After player death player can start the game again by clicking the
+            <button id="start" onclick="startGame()">New Game</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+
+    <script>
+      function startGame() {
+        location.reload();
+      }
+    </script>
+
+    <style>
+      button {
+        background-color: #4caf50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </body>
+</html>
